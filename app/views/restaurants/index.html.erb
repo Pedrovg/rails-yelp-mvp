@@ -1,0 +1,10 @@
+<body>
+  <h1 class="alert alert-info" style="border-left-width: 500px;border-right-width: 600px;right: 0px;">Restaurants</h1>
+  <ul class="card" style="border-left-width: 500px;border-right-width: 600px;right: 0px;">
+    <% @restaurants.each do |r| %>
+    <li><%= link_to r.name, r %></li>
+    <% end %>
+  </ul>
+
+  <%= link_to "+ Add a new restaurant", new_restaurant_url %>
+</body>
